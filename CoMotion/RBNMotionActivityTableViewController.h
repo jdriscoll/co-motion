@@ -1,5 +1,5 @@
 //
-//  RBNFirstViewController.h
+//  RBNMotionActivityTableViewController.h
 //  CoMotion
 //
 //  Created by Justin Driscoll on 1/2/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RBNFirstViewController : UIViewController
+@interface RBNMotionActivityTableViewController : UITableViewController
 
 @end

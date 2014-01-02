@@ -14,14 +14,14 @@
 		D001DD821875A87C00AB7C95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DD811875A87C00AB7C95 /* main.m */; };
 		D001DD861875A87C00AB7C95 /* RBNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DD851875A87C00AB7C95 /* RBNAppDelegate.m */; };
 		D001DD891875A87C00AB7C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D001DD871875A87C00AB7C95 /* Main.storyboard */; };
-		D001DD8C1875A87C00AB7C95 /* RBNFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DD8B1875A87C00AB7C95 /* RBNFirstViewController.m */; };
-		D001DD8F1875A87C00AB7C95 /* RBNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DD8E1875A87C00AB7C95 /* RBNSecondViewController.m */; };
 		D001DD911875A87C00AB7C95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D001DD901875A87C00AB7C95 /* Images.xcassets */; };
 		D001DD981875A87C00AB7C95 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD971875A87C00AB7C95 /* XCTest.framework */; };
 		D001DD991875A87C00AB7C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD751875A87C00AB7C95 /* Foundation.framework */; };
 		D001DD9A1875A87C00AB7C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD791875A87C00AB7C95 /* UIKit.framework */; };
 		D001DDA21875A87C00AB7C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D001DDA01875A87C00AB7C95 /* InfoPlist.strings */; };
 		D001DDA41875A87C00AB7C95 /* CoMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DDA31875A87C00AB7C95 /* CoMotionTests.m */; };
+		D001DDAE1875A89800AB7C95 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DDAD1875A89800AB7C95 /* CoreMotion.framework */; };
+		D001DDB11875ABB700AB7C95 /* RBNMotionActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +46,15 @@
 		D001DD841875A87C00AB7C95 /* RBNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBNAppDelegate.h; sourceTree = "<group>"; };
 		D001DD851875A87C00AB7C95 /* RBNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBNAppDelegate.m; sourceTree = "<group>"; };
 		D001DD881875A87C00AB7C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D001DD8A1875A87C00AB7C95 /* RBNFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBNFirstViewController.h; sourceTree = "<group>"; };
-		D001DD8B1875A87C00AB7C95 /* RBNFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBNFirstViewController.m; sourceTree = "<group>"; };
-		D001DD8D1875A87C00AB7C95 /* RBNSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBNSecondViewController.h; sourceTree = "<group>"; };
-		D001DD8E1875A87C00AB7C95 /* RBNSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBNSecondViewController.m; sourceTree = "<group>"; };
 		D001DD901875A87C00AB7C95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D001DD961875A87C00AB7C95 /* CoMotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoMotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D001DD971875A87C00AB7C95 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D001DD9F1875A87C00AB7C95 /* CoMotionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoMotionTests-Info.plist"; sourceTree = "<group>"; };
 		D001DDA11875A87C00AB7C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D001DDA31875A87C00AB7C95 /* CoMotionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoMotionTests.m; sourceTree = "<group>"; };
+		D001DDAD1875A89800AB7C95 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D001DDAF1875ABB700AB7C95 /* RBNMotionActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNMotionActivityTableViewController.h; sourceTree = "<group>"; };
+		D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNMotionActivityTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D001DDAE1875A89800AB7C95 /* CoreMotion.framework in Frameworks */,
 				D001DD781875A87C00AB7C95 /* CoreGraphics.framework in Frameworks */,
 				D001DD7A1875A87C00AB7C95 /* UIKit.framework in Frameworks */,
 				D001DD761875A87C00AB7C95 /* Foundation.framework in Frameworks */,
@@ -104,6 +104,7 @@
 		D001DD741875A87C00AB7C95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D001DDAD1875A89800AB7C95 /* CoreMotion.framework */,
 				D001DD751875A87C00AB7C95 /* Foundation.framework */,
 				D001DD771875A87C00AB7C95 /* CoreGraphics.framework */,
 				D001DD791875A87C00AB7C95 /* UIKit.framework */,
@@ -118,12 +119,10 @@
 				D001DD841875A87C00AB7C95 /* RBNAppDelegate.h */,
 				D001DD851875A87C00AB7C95 /* RBNAppDelegate.m */,
 				D001DD871875A87C00AB7C95 /* Main.storyboard */,
-				D001DD8A1875A87C00AB7C95 /* RBNFirstViewController.h */,
-				D001DD8B1875A87C00AB7C95 /* RBNFirstViewController.m */,
-				D001DD8D1875A87C00AB7C95 /* RBNSecondViewController.h */,
-				D001DD8E1875A87C00AB7C95 /* RBNSecondViewController.m */,
 				D001DD901875A87C00AB7C95 /* Images.xcassets */,
 				D001DD7C1875A87C00AB7C95 /* Supporting Files */,
+				D001DDAF1875ABB700AB7C95 /* RBNMotionActivityTableViewController.h */,
+				D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */,
 			);
 			path = CoMotion;
 			sourceTree = "<group>";
@@ -255,9 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D001DDB11875ABB700AB7C95 /* RBNMotionActivityTableViewController.m in Sources */,
 				D001DD821875A87C00AB7C95 /* main.m in Sources */,
-				D001DD8F1875A87C00AB7C95 /* RBNSecondViewController.m in Sources */,
-				D001DD8C1875A87C00AB7C95 /* RBNFirstViewController.m in Sources */,
 				D001DD861875A87C00AB7C95 /* RBNAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

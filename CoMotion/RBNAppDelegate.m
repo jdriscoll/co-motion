@@ -12,6 +12,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    BOOL activityInfoAvailable = [CMMotionActivityManager isActivityAvailable];
+    if (!activityInfoAvailable) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                        message:@"A device with the M7 co-processor is required for this app to function."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Dismiss"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
     // Override point for customization after application launch.
     return YES;
 }
