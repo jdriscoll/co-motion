@@ -19,33 +19,33 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-  [super viewDidAppear:animated];
+    [super viewDidAppear:animated];
 
-  self.title = @"Fire Walk With Me";
+    self.title = @"Fire Walk With Me";
 
-  if ([CMStepCounter isStepCountingAvailable] == NO) {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                    message:@"I can't see your steps!?"
-                                                   delegate:nil
-                                          cancelButtonTitle:@":'("
-                                          otherButtonTitles:nil];
-    [alert show];
-  }
+    if ([CMStepCounter isStepCountingAvailable] == NO) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                        message:@"I can't see your steps!?"
+                                                       delegate:nil
+                                              cancelButtonTitle:@":'("
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-  [super viewWillAppear:animated];
+    [super viewWillAppear:animated];
 
-  self.stepCounter = [[CMStepCounter alloc] init];
+    self.stepCounter = [[CMStepCounter alloc] init];
 
-  self.stepCountLabel.text = @"0 steps";
+    self.stepCountLabel.text = @"0 steps";
 
-  __weak typeof(self) weakSelf = self;
-  [self.stepCounter startStepCountingUpdatesToQueue:[NSOperationQueue mainQueue] updateOn:1 withHandler:^(NSInteger numberOfSteps, NSDate *timestamp, NSError *error) {
-    weakSelf.stepCountLabel.text = [NSString stringWithFormat:@"%ld steps", (long)numberOfSteps];
-  }];
-  // counting auto-stops when dealloc'd
+    __weak typeof(self) weakSelf = self;
+    [self.stepCounter startStepCountingUpdatesToQueue:[NSOperationQueue mainQueue] updateOn:1 withHandler:^(NSInteger numberOfSteps, NSDate *timestamp, NSError *error) {
+        weakSelf.stepCountLabel.text = [NSString stringWithFormat:@"%ld steps", (long)numberOfSteps];
+    }];
+    // counting auto-stops when dealloc'd
 }
 
 - (IBAction)showAllSteps:(id)sender
@@ -62,7 +62,7 @@
 
     __weak typeof(self) weakSelf = self;
     [self.stepCounter queryStepCountStartingFrom:today to:[NSDate date] toQueue:[NSOperationQueue mainQueue] withHandler:^(NSInteger numberOfSteps, NSError *error) {
-      weakSelf.stepCountLabel.text = [NSString stringWithFormat:@"%ld steps", (long)numberOfSteps];
+        weakSelf.stepCountLabel.text = [NSString stringWithFormat:@"%ld steps", (long)numberOfSteps];
     }];
 }
 
