@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C3CBBE1875D1C800985663 /* RBNWalkWithMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C3CBBD1875D1C800985663 /* RBNWalkWithMeViewController.m */; };
 		D001DD761875A87C00AB7C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD751875A87C00AB7C95 /* Foundation.framework */; };
 		D001DD781875A87C00AB7C95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD771875A87C00AB7C95 /* CoreGraphics.framework */; };
 		D001DD7A1875A87C00AB7C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DD791875A87C00AB7C95 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C3CBBC1875D1C800985663 /* RBNWalkWithMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNWalkWithMeViewController.h; sourceTree = "<group>"; };
+		03C3CBBD1875D1C800985663 /* RBNWalkWithMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNWalkWithMeViewController.m; sourceTree = "<group>"; };
 		D001DD721875A87C00AB7C95 /* CoMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D001DD751875A87C00AB7C95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D001DD771875A87C00AB7C95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */,
 				D001DDB21875B00E00AB7C95 /* RBNMotionActivityLogViewController.h */,
 				D001DDB31875B00E00AB7C95 /* RBNMotionActivityLogViewController.m */,
+				03C3CBBC1875D1C800985663 /* RBNWalkWithMeViewController.h */,
+				03C3CBBD1875D1C800985663 /* RBNWalkWithMeViewController.m */,
 			);
 			path = CoMotion;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				D001DDB11875ABB700AB7C95 /* RBNMotionActivityTableViewController.m in Sources */,
 				D001DDB41875B00E00AB7C95 /* RBNMotionActivityLogViewController.m in Sources */,
 				D001DD821875A87C00AB7C95 /* main.m in Sources */,
+				03C3CBBE1875D1C800985663 /* RBNWalkWithMeViewController.m in Sources */,
 				D001DD861875A87C00AB7C95 /* RBNAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

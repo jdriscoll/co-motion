@@ -67,8 +67,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    RBNMotionActivityLogViewController *logViewController = (RBNMotionActivityLogViewController *)segue.destinationViewController;
-    logViewController.activityManager = self.activityManager;
+    if ([segue.destinationViewController isKindOfClass:[RBNMotionActivityLogViewController class]]) {
+        RBNMotionActivityLogViewController *logViewController = (RBNMotionActivityLogViewController *)segue.destinationViewController;
+        logViewController.activityManager = self.activityManager;
+    }
 }
 
 @end
