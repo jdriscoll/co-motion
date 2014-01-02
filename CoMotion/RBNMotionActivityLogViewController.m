@@ -26,9 +26,10 @@
     [super viewWillAppear:animated];
 
     if (self.activityManager) {
+        __weak UITextView *textView = self.textView;
         [self.activityManager startActivityUpdatesToQueue:[NSOperationQueue mainQueue]
                                               withHandler:^(CMMotionActivity *activity) {
-                                                  self.textView.text = [NSString stringWithFormat:@"%@\n\n%@", activity, self.textView.text];
+                                                  textView.text = [NSString stringWithFormat:@"%@\n\n%@", activity, textView.text];
                                               }];
     }
 }

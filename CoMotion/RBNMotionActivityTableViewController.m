@@ -43,15 +43,16 @@
             self.activityManager = [[CMMotionActivityManager alloc] init];
         }
 
+        __weak typeof(self) weakSelf = self;
         [self.activityManager startActivityUpdatesToQueue:[NSOperationQueue mainQueue]
                                               withHandler:^(CMMotionActivity *activity) {
-                                                  self.timestampLabel.text = [NSString stringWithFormat:@"%@", activity.startDate];
-                                                  self.confidenceLabel.text = [@(activity.confidence) stringValue];
-                                                  self.isStationaryLabel.text = [@(activity.stationary) stringValue];
-                                                  self.isWalkingLabel.text = [@(activity.walking) stringValue];
-                                                  self.isRunningLabel.text = [@(activity.running) stringValue];
-                                                  self.isAutomotiveLabel.text = [@(activity.automotive) stringValue];
-                                                  self.isUnknownLabel.text = [@(activity.unknown) stringValue];
+                                                  weakSelf.timestampLabel.text = [NSString stringWithFormat:@"%@", activity.startDate];
+                                                  weakSelf.confidenceLabel.text = [@(activity.confidence) stringValue];
+                                                  weakSelf.isStationaryLabel.text = [@(activity.stationary) stringValue];
+                                                  weakSelf.isWalkingLabel.text = [@(activity.walking) stringValue];
+                                                  weakSelf.isRunningLabel.text = [@(activity.running) stringValue];
+                                                  weakSelf.isAutomotiveLabel.text = [@(activity.automotive) stringValue];
+                                                  weakSelf.isUnknownLabel.text = [@(activity.unknown) stringValue];
                                               }];
     }
 }
