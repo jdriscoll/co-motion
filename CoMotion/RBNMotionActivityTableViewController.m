@@ -7,6 +7,7 @@
 //
 
 #import "RBNMotionActivityTableViewController.h"
+#import "RBNMotionActivityLogViewController.h"
 
 @interface RBNMotionActivityTableViewController ()
 @property (nonatomic, strong) CMMotionActivityManager *activityManager;
@@ -32,17 +33,6 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -66,13 +56,19 @@
     }
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewDidDisappear:animated];
+    [super viewWillDisappear:animated];
 
     if (self.activityManager) {
         [self.activityManager stopActivityUpdates];
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    RBNMotionActivityLogViewController *logViewController = (RBNMotionActivityLogViewController *)segue.destinationViewController;
+    logViewController.activityManager = self.activityManager;
 }
 
 @end

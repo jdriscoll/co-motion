@@ -22,6 +22,7 @@
 		D001DDA41875A87C00AB7C95 /* CoMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DDA31875A87C00AB7C95 /* CoMotionTests.m */; };
 		D001DDAE1875A89800AB7C95 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001DDAD1875A89800AB7C95 /* CoreMotion.framework */; };
 		D001DDB11875ABB700AB7C95 /* RBNMotionActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */; };
+		D001DDB41875B00E00AB7C95 /* RBNMotionActivityLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D001DDB31875B00E00AB7C95 /* RBNMotionActivityLogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		D001DDAD1875A89800AB7C95 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D001DDAF1875ABB700AB7C95 /* RBNMotionActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNMotionActivityTableViewController.h; sourceTree = "<group>"; };
 		D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNMotionActivityTableViewController.m; sourceTree = "<group>"; };
+		D001DDB21875B00E00AB7C95 /* RBNMotionActivityLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNMotionActivityLogViewController.h; sourceTree = "<group>"; };
+		D001DDB31875B00E00AB7C95 /* RBNMotionActivityLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNMotionActivityLogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				D001DD7C1875A87C00AB7C95 /* Supporting Files */,
 				D001DDAF1875ABB700AB7C95 /* RBNMotionActivityTableViewController.h */,
 				D001DDB01875ABB700AB7C95 /* RBNMotionActivityTableViewController.m */,
+				D001DDB21875B00E00AB7C95 /* RBNMotionActivityLogViewController.h */,
+				D001DDB31875B00E00AB7C95 /* RBNMotionActivityLogViewController.m */,
 			);
 			path = CoMotion;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D001DDB11875ABB700AB7C95 /* RBNMotionActivityTableViewController.m in Sources */,
+				D001DDB41875B00E00AB7C95 /* RBNMotionActivityLogViewController.m in Sources */,
 				D001DD821875A87C00AB7C95 /* main.m in Sources */,
 				D001DD861875A87C00AB7C95 /* RBNAppDelegate.m in Sources */,
 			);
@@ -465,6 +471,7 @@
 				D001DDA91875A87C00AB7C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D001DDAA1875A87C00AB7C95 /* Build configuration list for PBXNativeTarget "CoMotionTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +480,7 @@
 				D001DDAC1875A87C00AB7C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
